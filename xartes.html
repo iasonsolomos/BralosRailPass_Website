@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Χάρτες | Bralos Rail Pass</title>
+  <meta name="description" content="Χάρτες του σιδηροδρομικού περάσματος Μπράλου." />
+  <meta name="theme-color" content="#f9f9f7" />
+
+  <meta property="og:title" content="Bralos Rail Pass — Χάρτες" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand" aria-label="Bralos Rail Pass — Home">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M 28 5 H 58 C 76 5 87 13 87 26 C 87 35 81 42 71 45 C 83 48 91 57 91 69 C 91 85 78 94 56 94 H 3 V 89 C 3 88 4 87 6 87 C 19 86 35 79 35 66 V 42 C 35 33 28 29 19 27 C 18 26 18 25 18 23 V 15 C 18 9 22 5 28 5 Z M 50 18 V 41 H 57 C 66 41 72 36 72 29 C 72 22 66 18 57 18 H 50 Z M 50 53 V 81 H 58 C 69 81 75 76 75 67 C 75 58 69 53 58 53 H 50 Z" />
+      </svg>
+      <span class="brand-name">BRALOS RAIL PASS<span class="brand-sub">ΣΙΔΗΡΟΔΡΟΜΙΚΟ ΠΕΡΑΣΜΑ ΜΠΡΑΛΟΥ</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+        <div>
+            <a class="t" href="index.html" data-i18n="navHome">Αρχική</a>
+        </div>
+        <div>
+            <a class="t" href="history.html" data-i18n="navHistory">Ιστορία</a>
+            <div class="dd">
+                <a href="history.html#/istoria/kataskevi" data-i18n="navConstruction">Κατασκευή</a>
+                <a href="history.html#/istoria/a-pagkosmios" data-i18n="navWW1">Α' Παγκόσμιος Πόλεμος</a>
+                <a href="history.html#/istoria/v-pagkosmios" data-i18n="navWW2">Β' Παγκόσμιος Πόλεμος</a>
+                <a href="history.html#/istoria/metapolemika" data-i18n="navPostWar">Μεταπολεμικά</a>
+                <a href="history.html#/istoria/tilediikisi" data-i18n="navSignalling">Τηλεδιοίκηση</a>
+                <a href="history.html#/istoria/simera" data-i18n="navToday">Σήμερα</a>
+            </div>
+        </div>
+        <div>
+            <a class="t" href="#/texnika/gefyres" data-i18n="navEngineering">Τεχνικά</a>
+            <div class="dd">
+                <a href="#/texnika/gefyres" data-i18n="navBridges">Γέφυρες</a>
+                <a href="#/texnika/siraggew" data-i18n="navTunnels">Σήραγγες</a>
+                <a href="#/texnika/stathmoi" data-i18n="navStations">Σταθμοί - Στάσεις</a>
+            </div>
+        </div>
+        <div>
+            <a class="t on" href="xartes.html" data-i18n="navMaps">Χάρτες</a>
+            <div class="dd">
+                <a href="xartes.html#/xartes/enas" data-i18n="navMap">Ένας Ενιαίος Χάρτης</a>
+                <a href="xartes.html#/xartes/mikotomi" data-i18n="navProfile">Μηκοτομή</a>
+                <a href="xartes.html#/xartes/mellon" data-i18n="navFuture">Μελλοντικές Προσθήκες</a>
+            </div>
+        </div>
+        <div>
+            <a class="t" href="#/vivlia" data-i18n="navBooks">Βιβλία</a>
+        </div>
+        <div>
+            <a class="t" href="#/epikoinonia" data-i18n="navContact">Επικοινωνία</a>
+        </div>
+    </nav>
+
+    <div class="nav-controls">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light or dark theme">☼ / ☾</button>
+      <button class="lang-btn" id="langToggle" aria-label="Change language">EL</button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open navigation">☰</button>
+    </div>
+
+    <style>
+      /* ---- Κεφαλίδα σελίδας + κουμπιά (ίδια με το history.html) ---- */
+      .sectionh{padding:5rem 0 0 0}
+      .eyebrowh{font:600 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+      .page-headh{padding:4rem 0 1.5rem;border-bottom:1px solid var(--line)}
+      .page-headh h1{font-size:clamp(2.4rem,6vw,4rem);margin-top:0;margin-bottom:.4rem}
+      .containerh{max-width:1180px;margin:auto;padding:0 1.4rem}
+      .pillsh{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;padding:0;list-style:none}
+      .pillsh a{display:block;padding:.4rem 1rem;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:.92rem;color:var(--muted)}
+      .pillsh a:hover{border-color:var(--accent);background:var(--accent);color:var(--accent-ink);transition:.3s}
+      .pillsh a.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+      /* ---- Περιεχόμενο χαρτών ---- */
+      #maps-section{padding:2.2rem 0 4rem}
+      .xm-panel[hidden]{display:none}
+      .xm-panel.show{animation:mapFade .45s ease}
+      @keyframes mapFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+      .xm-intro{max-width:70ch;margin-bottom:1.6rem}
+      .xm-intro h2{font-size:clamp(1.6rem,3vw,2.3rem);margin:0 0 .6rem}
+      .xm-intro p{font-size:1.05rem;line-height:1.75;margin:0}
+      .xm-stage{position:relative;height:min(72vh,680px);min-height:380px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface-2);box-shadow:var(--shadow)}
+      .xm-placeholder{display:grid;place-items:center;height:100%;padding:2rem;text-align:center;color:var(--muted)}
+      .xm-placeholder strong{display:block;font:500 1.35rem var(--serif);color:var(--text);margin-bottom:.4rem}
+      .xm-panel button:focus-visible,.pillsh a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+      @media (max-width:700px){.xm-stage{height:65vh;min-height:320px}}
+      @media (prefers-reduced-motion:reduce){.xm-panel.show{animation:none}}
+    </style>
+  </header>
+
+  <main>
+    <section class="sectionh" id="introduction">
+      <div class="page-headh">
+        <div class="containerh">
+          <div class="eyebrowh" data-i18n="navMaps">Χάρτες</div>
+          <h1 id="mapsTitle">Ένας Ενιαίος Χάρτης</h1>
+          <ul class="pillsh" id="mapsPills">
+            <li><a href="#/xartes/enas" data-map="enas" data-el="Ένας Ενιαίος Χάρτης" data-en="One Unified Map">Ένας Ενιαίος Χάρτης</a></li>
+            <li><a href="#/xartes/mikotomi" data-map="mikotomi" data-el="Μηκοτομή" data-en="Longitudinal Profile">Μηκοτομή</a></li>
+            <li><a href="#/xartes/mellon" data-map="mellon" data-el="Μελλοντικές Προσθήκες" data-en="Future Additions">Μελλοντικές Προσθήκες</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="maps-section">
+      <div class="containerh">
+        <div class="maps-content" id="maps-content"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Bralos Rail Pass</span>
+      <span data-i18n="footerText">Ιστορία · Μηχανική · Φύση</span>
+      <a href="#introduction" data-i18n="backTop">Επιστροφή στην κορυφή ↑</a>
+    </div>
+  </footer>
+
+  <script src="xartes-data.js"></script>
+
+  <script>
+    /* ---------- Κοινά με τις άλλες σελίδες: μενού, γλώσσα, θέμα ---------- */
+    const translations = {
+      el: {
+        navHome:"Αρχική", navHistory:"Ιστορία",
+        navConstruction:"Κατασκευή", navWW1:"Α' Παγκόσμιος Πόλεμος", navWW2:"Β' Παγκόσμιος Πόλεμος", navPostWar:"Μεταπολεμικά", navSignalling:"Τηλεδιοίκηση", navToday:"Σήμερα",
+        navEngineering:"Τεχνικά", navBridges:"Γέφυρες", navTunnels:"Σήραγγες", navStations:"Σταθμοί - Στάσεις",
+        navMaps:"Χάρτες", navMap:"Ένας Ενιαίος Χάρτης", navProfile:"Μηκοτομή", navFuture:"Μελλοντικές Προσθήκες",
+        navBooks:"Βιβλία", navContact:"Επικοινωνία",
+        footerText:"Ιστορία · Μηχανική · Φύση", backTop:"Επιστροφή στην κορυφή ↑"
+      },
+      en: {
+        navHome:"Home", navHistory:"History",
+        navConstruction:"Construction", navWW1:"World War I", navWW2:"World War II", navPostWar:"Post-War", navSignalling:"Signalling", navToday:"Today",
+        navEngineering:"Engineering", navBridges:"Bridges", navTunnels:"Tunnels", navStations:"Stations & Stops",
+        navMaps:"Maps", navMap:"Unified Maps", navProfile:"Longitudinal Profile", navFuture:"Future Additions",
+        navBooks:"Books", navContact:"Contact",
+        footerText:"History · Engineering · Nature", backTop:"Back to top ↑"
+      }
+    };
+
+    let language = localStorage.getItem("bralos-language") || "el";
+    let theme = localStorage.getItem("bralos-theme") || "light";
+
+    function setLanguage(lang) {
+      language = lang;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key]) el.textContent = translations[lang][key];
+      });
+      document.getElementById("langToggle").textContent = lang === "el" ? "GR" : "EN";
+      document.title = lang === "el" ? "Χάρτες | Bralos Rail Pass" : "Maps | Bralos Rail Pass";
+      localStorage.setItem("bralos-language", lang);
+      document.dispatchEvent(new Event("bralos-languagechange"));
+    }
+
+    function setTheme(nextTheme) {
+      theme = nextTheme;
+      document.documentElement.dataset.theme = theme;
+      document.getElementById("themeToggle").textContent = theme === "dark" ? "Light" : "Dark";
+      document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#1b1b1b" : "#f9f9f7";
+      localStorage.setItem("bralos-theme", theme);
+      document.dispatchEvent(new Event("bralos-themechange"));
+    }
+
+    document.getElementById("langToggle").addEventListener("click", () => setLanguage(language === "el" ? "en" : "el"));
+    document.getElementById("themeToggle").addEventListener("click", () => setTheme(theme === "light" ? "dark" : "light"));
+    document.getElementById("menuToggle").addEventListener("click", () => document.getElementById("navLinks").classList.toggle("open"));
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => document.getElementById("navLinks").classList.remove("open"));
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ============================================================
+       ΧΑΡΤΕΣ: ΑΛΛΑΓΗ ΠΕΡΙΕΧΟΜΕΝΟΥ ΜΕ ΤΑ ΚΟΥΜΠΙΑ
+       Τα κείμενα βρίσκονται στο xartes-data.js.
+       Κάθε χάρτης δηλώνεται εδώ, με ένα «renderer» που ξέρει να
+       ζωγραφίζει μέσα στο πλαίσιο του (stage). Προστίθενται ανά βήμα:
+         Βήμα 2:  MAP_RENDERERS.enas     = (stage, data) => { ... }
+         Βήμα 3:  MAP_RENDERERS.mikotomi = (stage, data) => { ... }
+         Βήμα 4:  MAP_RENDERERS.mellon   = (stage, data) => { ... }
+       Όσο δεν υπάρχει renderer, εμφανίζεται ένα προσωρινό πλαίσιο.
+       ============================================================ */
+    const MAP_RENDERERS = {};   // key -> function(stage, data)   (τρέχει ΜΙΑ φορά, όταν ανοίξει για πρώτη φορά)
+    const MAP_ON_SHOW   = {};   // key -> function(stage)         (τρέχει ΚΑΘΕ φορά που εμφανίζεται, π.χ. map.invalidateSize())
+
+    const MD = (typeof mapsData !== "undefined") ? mapsData : null;
+    const DEFAULT_MAP = "enas";
+    const mapsContent = document.getElementById("maps-content");
+    const mapsTitle   = document.getElementById("mapsTitle");
+    const mapsPills   = document.querySelectorAll("#mapsPills a");
+
+    const MUI = {
+      el: { soon: "Ο χάρτης θα προστεθεί στο επόμενο βήμα." },
+      en: { soon: "This map will be added in the next step." }
+    };
+    const mLang   = () => language === "en" ? "en" : "el";
+    const mPick   = o => o ? (o[mLang()] ?? o.el ?? "") : "";
+    const mReduce = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const mapInited = {};
+    let currentMap = null;
+
+    function getMapFromHash() {
+      const m = location.hash.match(/^#\/xartes\/([\w-]+)/);
+      return (m && MD && MD[m[1]]) ? m[1] : DEFAULT_MAP;
+    }
+
+    function buildPanels() {
+      mapsContent.innerHTML = Object.keys(MD).map(k => `
+        <section class="xm-panel" id="mp-${k}" hidden>
+          <div class="xm-intro"><h2 data-role="title"></h2><p data-role="desc"></p></div>
+          <div class="xm-stage" id="stage-${k}"></div>
+        </section>`).join("");
+    }
+
+    function renderPlaceholder(k) {
+      document.getElementById("stage-" + k).innerHTML =
+        `<div class="xm-placeholder"><div><strong>${mPick(MD[k].title)}</strong>${MUI[mLang()].soon}</div></div>`;
+    }
+
+    function updateMapTexts() {
+      Object.keys(MD).forEach(k => {
+        const panel = document.getElementById("mp-" + k);
+        panel.querySelector('[data-role="title"]').textContent = mPick(MD[k].title);
+        panel.querySelector('[data-role="desc"]').innerHTML = mPick(MD[k].desc);
+        if (mapInited[k] && !MAP_RENDERERS[k]) renderPlaceholder(k);   // αλλαγή γλώσσας στο προσωρινό πλαίσιο
+      });
+      mapsPills.forEach(a => {
+        a.classList.toggle("on", a.dataset.map === currentMap);
+        a.textContent = a.dataset[mLang()];
+      });
+      if (currentMap) mapsTitle.textContent = mPick(MD[currentMap].title);
+    }
+
+    function showMap(key, animate = true) {
+      currentMap = key;
+      Object.keys(MD).forEach(k => {
+        const panel = document.getElementById("mp-" + k);
+        panel.hidden = (k !== key);
+        panel.classList.remove("show");
+      });
+      const panel = document.getElementById("mp-" + key);
+      const stage = document.getElementById("stage-" + key);
+
+      if (!mapInited[key]) {                 // πρώτη εμφάνιση: δημιουργία
+        mapInited[key] = true;
+        if (MAP_RENDERERS[key]) MAP_RENDERERS[key](stage, MD[key]);
+        else renderPlaceholder(key);
+      }
+      if (MAP_ON_SHOW[key]) MAP_ON_SHOW[key](stage);
+
+      updateMapTexts();
+      if (animate && !mReduce()) { void panel.offsetWidth; panel.classList.add("show"); }
+    }
+
+    if (!MD) {
+      mapsContent.innerHTML = "<p>Δεν βρέθηκε το αρχείο <strong>xartes-data.js</strong>. Βάλτε το στον ίδιο φάκελο με το xartes.html.</p>";
+    } else {
+      buildPanels();
+      window.addEventListener("hashchange", () => {
+        if (!/^#\/xartes\//.test(location.hash)) return;       // αγνόηση άλλων συνδέσμων
+        showMap(getMapFromHash(), true);
+        const top = document.getElementById("introduction");
+        if (top) top.scrollIntoView({ behavior: mReduce() ? "auto" : "smooth", block: "start" });
+      });
+      document.addEventListener("bralos-languagechange", updateMapTexts);
+    }
+
+    setLanguage(language);
+    setTheme(theme);
+    if (MD) showMap(getMapFromHash(), false);
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bralos Rail Pass | Σιδηροδρομικό Πέρασμα Μπράλου</title>
+  <meta name="description"
+    content="Discover the history, engineering and landscapes of the Bralos railway route. Ανακαλύψτε την ιστορία, τη μηχανική και τα τοπία του Μπράλου." />
+  <meta name="theme-color" content="#f9f9f7" />
+
+  <meta property="og:title" content="Bralos Rail Pass" />
+  <meta property="og:description"
+    content="Where engineering, history and nature meet." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand" aria-label="Bralos Rail Pass — Home">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M 28 5 H 58 C 76 5 87 13 87 26 C 87 35 81 42 71 45 C 83 48 91 57 91 69 C 91 85 78 94 56 94 H 3 V 89 C 3 88 4 87 6 87 C 19 86 35 79 35 66 V 42 C 35 33 28 29 19 27 C 18 26 18 25 18 23 V 15 C 18 9 22 5 28 5 Z M 50 18 V 41 H 57 C 66 41 72 36 72 29 C 72 22 66 18 57 18 H 50 Z M 50 53 V 81 H 58 C 69 81 75 76 75 67 C 75 58 69 53 58 53 H 50 Z" />
+      </svg>
+      <span class="brand-name">BRALOS RAIL PASS<span class="brand-sub">ΣΙΔΗΡΟΔΡΟΜΙΚΟ ΠΕΡΑΣΜΑ ΜΠΡΑΛΟΥ</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+        <div>
+            <a class="t on" href="index.html" data-i18n="navHome" data-el="Αρχική">Αρχική</a>
+        </div>
+        <div>
+            <a class="t" href="history.html" data-i18n="navHistory" data-el="Ιστορία">Ιστορία</a>
+            <div class="dd">
+                <a href="history.html#/istoria/kataskevii" data-i18n="navConstruction" data-el="Κατασκευή">Κατασκευή</a>
+                <a href="history.html#/istoria/a-pagkosmios" data-i18n="navWW1" data-el="Α' Παγκόσμιος Πόλεμος">Α' Παγκόσμιος Πόλεμος</a>
+                <a href="history.htm#l/istoria/v-pagkosmios" data-i18n="navWW2" data-el="Β' Παγκόσμιος Πόλεμος">Β' Παγκόσμιος Πόλεμος</a>
+                <a href="history.html#/istoria/metapolemika" data-i18n="navPostWar" data-el="Μεταπολεμικά">Μεταπολεμικά</a>
+                <a href="history.html#/istoria/tilediikisi" data-i18n="navSignalling" data-el="Μεταπολεμικά">Τηλεδιοίκηση</a>
+                <a href="history.html#/istoria/simera" data-i18n="navToday" data-el="Σήμερα">Σήμερα</a>
+            </div>
+        </div>
+        <div>
+            <a class="t" href="#/texnika/gefyres" data-i18n="navEngineering" data-el="Τεχνικά">Τεχνικά</a>
+            <div class="dd">
+                <a href="#/texnika/gefyres" data-i18n="navBridges" data-el="Γέφυρες">Γέφυρες</a>
+                <a href="#/texnika/siraggew" data-i18n="navTunnels" data-el="Σήραγγες">Σήραγγες</a>
+                <a href="#/texnika/stathmoi" data-i18n="navStations" data-el="Σταθμοί - Στάσεις">Σταθμοί - Στάσεις</a>
+            </div>
+        </div>
+        <div>
+            <a class="t" href="xartes.html" data-i18n="navMaps" data-el="Χάρτες">Χάρτες</a>
+            <div class="dd">
+                <a href="#/xartes/enas" data-i18n="navMap" data-el="Ένας Ενιαίος Χάρτης">Ένας Ενιαίος Χάρτης</a>
+                <a href="xartes.html#/xartes/mikotomi" data-i18n="navProfile" data-el="Μελλοντικές Προσθήκες">Μελλοντικές Προσθήκες</a>
+            </div>
+        </div>
+        <div>
+            <a class="t" href="#/vivlia" data-i18n="navBooks" data-el="Βιβλία">Βιβλία</a>
+        </div>
+        <div>
+            <a class="t" href="#/epikoinonia" data-i18n="navContact" data-el="Επικοινωνία">Επικοινωνία</a>
+        </div>
+    </nav>
+    <div class="nav-controls">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light or dark theme">☼ / ☾</button>
+      <button class="lang-btn" id="langToggle" aria-label="Change language">EL</button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+<!-- src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2400&q=90" -->
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-image"
+        src="img/60450010.JPG"
+        alt="Mountain landscape in Greece" />
+      <div class="container hero-content">
+        <div class="eyebrow" data-i18n="heroEyebrow">A journey through time</div>
+        <h1>Bralos Rail Pass</h1>
+        <p class="hero-sub" data-i18n="heroSub">Εκεί που η μηχανική, η ιστορία και η φύση συναντιούνται.</p>
+        <p class="hero-en" data-i18n="heroEn">Where engineering, history and nature meet.</p>
+        <div class="hero-actions">
+          <a href="#route" class="btn btn-primary"><span data-i18n="explore">Εξερευνήστε τη Διαδρομή</span> ↗</a>
+          <a href="#contact" class="btn btn-outline">▢ <span data-i18n="plan">Σχεδιάστε την Επίσκεψή σας</span></a>
+        </div>
+      </div>
+      <!--<div class="container hero-bottom">
+        <span class="scroll-label" data-i18n="scroll">↓ Κύλιση για εξερεύνηση</span>
+      </div> -->
+    </section>
+
+    <section class="section" id="introduction">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal">
+          <div class="eyebrow" data-i18n="introEyebrow">A historic railway route</div>
+          <h2 data-i18n="introTitle">Τι ακριβώς είναι;</h2>
+          <p data-i18n="introText">Το Σιδηροδρομικό Πέρασμα του Μπράλου, επίσης γνωστό ως Ορεινό, είναι μια μαγευτική σιδηροδρομική διαδρομή στην Στερεά Ελλάδα, που εκτείνεται ανάμεσα στους Δήμους Αμφίκλειας - Ελάτειας, Δελφών και Λαμιέων. Θεωρείται μία από τις πιο εντυπωσιακές σιδηροδρομικές γραμμές στην Ελλάδα, μαζί με άλλα διάσημα τμήματα όπως τα στενά του Νέστου, το τραινάκι του Πηλίου, τον Οδοντωτό και το δίκτυο της Πελοποννήσου. Το Πέρασμα αποτελεί μέρος της αρχικής σιδηροδρομικής γραμμής Αθηνών - Θεσσαλονίκης και έχει μήκος 56,241 χιλιόμετρα. Στις αρχές του 2018, διακόπηκε η λειτουργία του ως κομμάτι του κύριου σιδηροδρομικού άξονα, καθώς αντικαταστάθηκε από μια νέα, γειτονική και βορειότερη γραμμή υψηλών ταχυτήτων.</p>
+          <p><em data-i18n="introEn">A railway journey through landscapes shaped by engineering, history and time.</em></p>
+          <a class="text-link" href="#history"><span data-i18n="learn">Μάθετε περισσότερα</span> →</a>
+        </div>
+
+        <div class="feature-grid reveal">
+          <article class="feature">
+            <div class="feature-icon">⌁</div>
+            <h3 data-i18n="feat1">Μηχανική Αριστεία</h3>
+            <p data-i18n="feat1p">Γέφυρες, σήραγγες και απαιτητικά τεχνικά έργα.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">⌁</div>
+            <h3 data-i18n="feat2">Φυσική Ομορφιά</h3>
+            <p data-i18n="feat2p">Βουνά, χαράδρες και μοναδικά τοπία.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">⌂</div>
+            <h3 data-i18n="feat3">Ιστορική Κληρονομιά</h3>
+            <p data-i18n="feat3p">Ένα ταξίδι στην ιστορία της Ελλάδας.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">▤</div>
+            <h3 data-i18n="feat4">Πολιτισμός</h3>
+            <p data-i18n="feat4p">Αρχεία, μαρτυρίες και τοπικές ιστορίες.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">◎</div>
+            <h3 data-i18n="feat5">Τουρισμός</h3>
+            <p data-i18n="feat5p">Ανακαλύψτε τον τόπο με τον δικό σας ρυθμό.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">♧</div>
+            <h3 data-i18n="feat6">Βιώσιμη Ανάδειξη</h3>
+            <p data-i18n="feat6p">Σεβασμός στο τοπίο και την κληρονομιά.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-section" id="route">
+      <div class="container route-grid">
+        <div class="route-photo reveal">
+          <img src="img/BG1.jpg"
+               alt="Mountain landscape" loading="lazy">
+          <div class="photo-caption">
+            <strong data-i18n="routeCaption">Γέφυρα Γοργοποτάμου</strong>
+            <small data-i18n="routeCaptionSub">Κεντρική Ελλάδα · Μήκος 194m · Ύψος 30m</small>
+          </div>
+        </div>
+        <div class="route-copy reveal">
+          <div class="eyebrow" data-i18n="routeEyebrow">Landscape & place</div>
+          <h2 data-i18n="routeTitle">Ένα ταξίδι μέσα από την καρδιά της Ελλάδας</h2>
+          <p data-i18n="routeText">Η διαδρομή ξεκινά από τον Σταθμό της Τιθορέας, με θέα τον Παρνασσό και το Καλλίδρομο, συνεχίζει μέσω της Αμφίκλειας και της εύφορης πεδιάδας του Βοιωτικού Κηφισού, περνώντας από τους σταθμούς της Λιλαίας και του Μπράλου. Από εκεί αρχίζει η εντυπωσιακή ορεινή χάραξη, με σήραγγες, κοιλαδογέφυρες και απόκρημνα φαράγγια, διασχίζοντας τις πλαγιές της Οίτης και το ιστορικό πέρασμα της Τραχίνας. Η πανοραμική θέα προς την πεδιάδα της Λαμίας και τον Μαλιακό Κόλπο συνοδεύει τον ταξιδιώτη έως τη γέφυρα του Γοργοποτάμου, πριν η γραμμή διασχίσει την κοιλάδα του Σπερχειού και καταλήξει στον Σταθμό του Λειανοκλαδίου.</p>
+          <a href="#maps" class="btn btn-primary"><span data-i18n="exploreMap">Εξερευνήστε τον Χάρτη</span> →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container stats" aria-label="Route highlights">
+      <div class="stat"><span class="stat-number">1908</span><span class="stat-label" data-i18n="stat1">Η εποχή της σιδηροδρομικής ανάπτυξης</span></div>
+      <div class="stat"><span class="stat-number">⛰</span><span class="stat-label" data-i18n="stat2">Ορεινό ανάγλυφο</span></div>
+      <div class="stat"><span class="stat-number">⚒</span><span class="stat-label" data-i18n="stat3">Τεχνικά έργα</span></div>
+      <div class="stat"><span class="stat-number">∞</span><span class="stat-label" data-i18n="stat4">Ιστορίες προς ανακάλυψη</span></div>
+    </section>
+
+    <section class="section" id="history">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="historyEyebrow">The story of a railway</div>
+          <h2 data-i18n="historyTitle">Ιστορία που διασχίζει τον χρόνο</h2>
+          <p data-i18n="historyIntro">Το Πέρασμα αποτέλεσε κομβικό σημείο της σύγχρονης ελληνικής ιστορίας, συμβάλλοντας στην ανάπτυξη της βιομηχανίας, της γεωργίας, του εμπορίου και των μεταφορών. Η κατασκευή του αντιμετώπισε σημαντικές τεχνικές προκλήσεις λόγω της δύσβατης μορφολογίας της περιοχής. Παράλληλα, διαδραμάτισε στρατηγικό ρόλο στους δύο Παγκόσμιους Πολέμους, εξυπηρετώντας τη μεταφορά συμμαχικών και ελληνικών στρατευμάτων, ενώ αποτέλεσε στόχο αντιστασιακών ενεργειών κατά την Κατοχή. Μεταπολεμικά, συνέβαλε καθοριστικά στην αποκατάσταση του σιδηροδρομικού δικτύου και την ανασυγκρότηση της χώρας.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/const_ele(1).jpg" alt="Mountain forest"></div>
+            <div class="card-body"><span class="card-number">01 / HISTORY</span><h3 data-i18n="hist1">Κατασκευή</h3><p data-i18n="hist1p">Ο σχεδιασμός, οι προκλήσεις και η δημιουργία της γραμμής.</p><a class="card-link" href="history.html#/istoria/kataskevii" data-i18n="discover">Ανακαλύψτε</a></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/carte_postale_no_margin.jpg" alt="Mountain range"></div>
+            <div class="card-body"><span class="card-number">02 / HISTORY</span><h3 data-i18n="hist2">Α' Παγκόσμιος Πόλεμος</h3><p data-i18n="hist2p">Η στρατηγική σημασία της γραμμής και τα γεγονότα της εποχής.</p><a class="card-link" href="#contact" data-i18n="discover">Ανακαλύψτε →</a></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/GOG1942.jpg" alt="Greek countryside"></div>
+            <div class="card-body"><span class="card-number">03 / HISTORY</span><h3 data-i18n="hist3">Β' Παγκόσμιος Πόλεμος</h3><p data-i18n="hist3p">Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.</p><a class="card-link" href="#contact" data-i18n="discover">Ανακαλύψτε →</a></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/ASWREN.jpg" alt="Mountain range"></div>
+            <div class="card-body"><span class="card-number">04 / HISTORY</span><h3 data-i18n="hist4">Μεταπολεμικά</h3><p data-i18n="hist4p">Η στρατηγική σημασία της γραμμής και τα γεγονότα της εποχής.</p><a class="card-link" href="#contact" data-i18n="discover">Ανακαλύψτε →</a></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/signalling2.jpg" alt="Mountain range"></div>
+            <div class="card-body"><span class="card-number">05 / HISTORY</span><h3 data-i18n="hist5">Τηλεδιοίκηση</h3><p data-i18n="hist5p">Η στρατηγική σημασία της γραμμής και τα γεγονότα της εποχής.</p><a class="card-link" href="#contact" data-i18n="discover">Ανακαλύψτε →</a></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/papadia_kakavas (2).jpg" alt="Greek countryside"></div>
+            <div class="card-body"><span class="card-number">06 / HISTORY</span><h3 data-i18n="hist6">Σήμερα</h3><p data-i18n="hist6p">Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.</p><a class="card-link" href="#contact" data-i18n="discover">Ανακαλύψτε →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-section" id="engineering">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="engEyebrow">Engineering & infrastructure</div>
+          <h2 data-i18n="engTitle">Η μηχανική πίσω από τη διαδρομή</h2>
+          <p data-i18n="engIntro">Εξερευνήστε τα τεχνικά έργα και την υποδομή που διαμόρφωσαν τη σιδηροδρομική διέλευση.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/const_papadia(1).jpg" alt="Mountain forest"></div>
+            <div class="card-body"><span class="card-number">01 / STRUCTURES</span>
+              <h3 data-i18n="eng1">Γέφυρες</h3>
+              <p data-i18n="eng1p">Λιθόκτιστες και μεταλλικές κατασκευές, αρχιτεκτονική και τεχνικές λεπτομέρειες.</p>
+              <a href="#contact" class="card-link" data-i18n="discover">Ανακαλύψτε →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/TBR_entry2.1.jpg" alt="Mountain forest"></div>
+            <div class="card-body">
+              <span class="card-number">02 / UNDERGROUND</span>
+              <h3 data-i18n="eng2">Σήραγγες</h3>
+              <p data-i18n="eng2p">Η διάνοιξη μέσα από το ορεινό ανάγλυφο και οι προκλήσεις της κατασκευής.</p>
+              <a href="#contact" class="card-link" data-i18n="discover">Ανακαλύψτε →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-image"><img loading="lazy" src="img/ww1_bralos(1).jpg" alt="Mountain forest"></div>
+            <div class="card-body">
+              <span class="card-number">03 / STATIONS</span>
+              <h3 data-i18n="eng3">Σταθμοί & Στάσεις</h3>
+              <p data-i18n="eng3p">Ιστορικά κτίρια, σιδηροδρομικοί κόμβοι και μικρές στάσεις.</p>
+              <a href="#contact" class="card-link" data-i18n="discover">Ανακαλύψτε →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="maps">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="mapsEyebrow">Explore the geography</div>
+          <h2 data-i18n="mapsTitle">Χάρτες & διαδρομές</h2>
+          <p data-i18n="mapsIntro">Ένας ενιαίος ψηφιακός χάρτης θα συγκεντρώνει τη διαδρομή, τα σημεία ενδιαφέροντος και το υψομετρικό προφίλ.</p>
+        </div>
+        <div class="map-panel reveal">
+          <div>
+            <h3 data-i18n="mapPanelTitle">Ο Μπράλος στον χάρτη</h3>
+            <p data-i18n="mapPanelText">Ο διαδραστικός χάρτης και οι ιστορικές παραλλαγές της διαδρομής θα προστεθούν σε επόμενη έκδοση.</p>
+            <a href="#contact" class="btn btn-outline" data-i18n="future">Μελλοντικές Προσθήκες ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-section" id="books">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="booksEyebrow">Library & research</div>
+          <h2 data-i18n="booksTitle">Βιβλία & ιστορικές πηγές</h2>
+          <p data-i18n="booksIntro">Μια επιμελημένη ψηφιακή βιβλιοθήκη με βιβλιογραφία, αρχειακό υλικό και δημοσιεύσεις.</p>
+        </div>
+        <div class="book-list reveal">
+          <div class="book"><div class="book-icon">▤</div><div><h3 data-i18n="book1">Ιστορική βιβλιογραφία</h3><p data-i18n="book1p">Μελέτες και εκδόσεις για την ελληνική σιδηροδρομική ιστορία.</p></div><span class="card-link">01</span></div>
+          <div class="book"><div class="book-icon">▧</div><div><h3 data-i18n="book2">Αρχειακά τεκμήρια</h3><p data-i18n="book2p">Έγγραφα, φωτογραφίες, χάρτες και ιστορικές μαρτυρίες.</p></div><span class="card-link">02</span></div>
+          <div class="book"><div class="book-icon">✎</div><div><h3 data-i18n="book3">Έρευνα & δημοσιεύσεις</h3><p data-i18n="book3p">Σύγχρονες εργασίες και τεχνικές μελέτες.</p></div><span class="card-link">03</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <div class="eyebrow" data-i18n="contactEyebrow">Get in touch</div>
+          <h2 data-i18n="contactTitle">Ας κρατήσουμε ζωντανή την ιστορία</h2>
+          <p data-i18n="contactText">Για ιστορικές πληροφορίες, ερευνητικές συνεργασίες, περιηγήσεις ή συνεισφορά αρχειακού υλικού, επικοινωνήστε μαζί μας.</p>
+          <p>✉ <a href="mailto:info@bralosrailpass.gr">bralosrailpass@gmail.com</a></p>
+          <p data-i18n="contactNote">Η διεύθυνση είναι ενδεικτική και πρέπει να αντικατασταθεί με το επίσημο email.</p>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="field"><label for="name" data-i18n="nameLabel">Ονοματεπώνυμο</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="email" data-i18n="emailLabel">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="topic" data-i18n="topicLabel">Θέμα επικοινωνίας</label>
+            <select id="topic" name="topic">
+              <option value="general" data-i18n="topic1">Γενικό ερώτημα</option>
+              <option value="research" data-i18n="topic2">Ιστορική έρευνα</option>
+              <option value="visit" data-i18n="topic3">Επίσκεψη / περιήγηση</option>
+              <option value="archive" data-i18n="topic4">Αρχειακό υλικό</option>
+            </select>
+          </div>
+          <div class="field"><label for="message" data-i18n="messageLabel">Μήνυμα</label><textarea id="message" name="message" required></textarea></div>
+          <button class="btn btn-primary" type="submit" data-i18n="send">Αποστολή μηνύματος</button>
+          <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Bralos Rail Pass</span>
+      <span data-i18n="footerText">Ιστορία · Μηχανική · Φύση</span>
+      <a href="#home" data-i18n="backTop">Επιστροφή στην κορυφή ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      el: {
+        navHome:"Αρχική", navHistory:"Ιστορία", 
+        navConstruction:"Κατασκευή", navWW1:"Α' Παγκόσμιος Πόλεμος", navWW2:"Β' Παγκόσμιος Πόλεμος", navPostWar:"Μεταπολεμικά", navSignalling:"Τηλεδιοίκηση", navToday:"Σήμερα",
+        navEngineering:"Τεχνικά", navBridges:"Γέφυρες", navTunnels:"Σήραγγες", navStations:"Σταθμοί-Στάσεις",
+        navMaps:"Χάρτες", navMap:"Ενιαίος Χάρτης", navProfile:"Μηκοτομή",
+        navBooks:"Βιβλία", navContact:"Επικοινωνία",
+        heroEyebrow:"Ένα ταξίδι στον χρόνο",
+        heroSub:"Εκεί που η μηχανική, η ιστορία και η φύση συναντιούνται.",
+        heroEn:"Where engineering, history and nature meet.",
+        explore:"Εξερευνήστε τη Διαδρομή", plan:"Σχεδιάστε την Επίσκεψή σας",
+        scroll:"↓ Κύλιση για εξερεύνηση",
+        introEyebrow:"Μια ιστορική σιδηροδρομική διαδρομή",
+        introTitle:"Τι ακριβώς είναι;",
+        introText:"Το Σιδηροδρομικό Πέρασμα του Μπράλου, επίσης γνωστό ως Ορεινό, είναι μια μαγευτική σιδηροδρομική διαδρομή στην Στερεά Ελλάδα, που εκτείνεται ανάμεσα στους Δήμους Αμφίκλειας - Ελάτειας, Δελφών και Λαμιέων. Θεωρείται μία από τις πιο εντυπωσιακές σιδηροδρομικές γραμμές στην Ελλάδα, μαζί με άλλα διάσημα τμήματα όπως τα στενά του Νέστου, το τραινάκι του Πηλίου, τον Οδοντωτό και το δίκτυο της Πελοποννήσου.Το Πέρασμα αποτελεί μέρος της αρχικής σιδηροδρομικής γραμμής Αθηνών - Θεσσαλονίκης και έχει μήκος 56,241 χιλιόμετρα. Στις αρχές του 2018, διακόπηκε η λειτουργία του ως κομμάτι του κύριου σιδηροδρομικού άξονα, καθώς αντικαταστάθηκε από μια νέα, γειτονική και βορειότερη γραμμή υψηλών ταχυτήτων.",
+        introEn:"Μια σιδηροδρομική διαδρομή μέσα από τοπία που διαμορφώθηκαν από τη μηχανική, την ιστορία και τον χρόνο.",
+        learn:"Μάθετε περισσότερα",
+        feat1:"Μηχανική Αριστεία",feat1p:"Γέφυρες, σήραγγες και απαιτητικά τεχνικά έργα.",
+        feat2:"Φυσική Ομορφιά",feat2p:"Βουνά, χαράδρες και μοναδικά τοπία.",
+        feat3:"Ιστορική Κληρονομιά",feat3p:"Ένα ταξίδι στην ιστορία της Ελλάδας.",
+        feat4:"Πολιτισμός",feat4p:"Αρχεία, μαρτυρίες και τοπικές ιστορίες.",
+        feat5:"Τουρισμός",feat5p:"Ανακαλύψτε τον τόπο με τον δικό σας ρυθμό.",
+        feat6:"Βιώσιμη Ανάδειξη",feat6p:"Σεβασμός στο τοπίο και την κληρονομιά.",
+        routeCaption:"Γέφυρα Γοργοποτάμου",routeCaptionSub:"Κεντρική Ελλάδα · Μήκος 194m · Ύψος 30m",
+        routeEyebrow:"Φύση & τόπος",routeTitle:"Η διαδρομή",
+        routeText:"Η διαδρομή ξεκινά από τον Σταθμό της Τιθορέας, με θέα τον Παρνασσό και το Καλλίδρομο, συνεχίζει μέσω της Αμφίκλειας και της εύφορης πεδιάδας του Βοιωτικού Κηφισού, περνώντας από τους σταθμούς της Λιλαίας και του Μπράλου. Από εκεί αρχίζει η εντυπωσιακή ορεινή χάραξη, με σήραγγες, κοιλαδογέφυρες και απόκρημνα φαράγγια, διασχίζοντας τις πλαγιές της Οίτης και το ιστορικό πέρασμα της Τραχίνας. Η πανοραμική θέα προς την πεδιάδα της Λαμίας και τον Μαλιακό Κόλπο συνοδεύει τον ταξιδιώτη έως τη γέφυρα του Γοργοποτάμου, πριν η γραμμή διασχίσει την κοιλάδα του Σπερχειού και καταλήξει στον Σταθμό του Λειανοκλαδίου.",
+        exploreMap:"Εξερευνήστε τον Χάρτη",
+        stat1:"Η εποχή της σιδηροδρομικής ανάπτυξης",stat2:"Ορεινό ανάγλυφο",stat3:"Τεχνικά έργα",stat4:"Ιστορίες προς ανακάλυψη",
+        historyEyebrow:"Η ιστορία μιας σιδηροδρομικής γραμμής",
+        historyTitle:"Ιστορία που διασχίζει τον χρόνο",
+        historyIntro:"Το Πέρασμα αποτέλεσε κομβικό σημείο της σύγχρονης ελληνικής ιστορίας, συμβάλλοντας στην ανάπτυξη της βιομηχανίας, της γεωργίας, του εμπορίου και των μεταφορών. Η κατασκευή του αντιμετώπισε σημαντικές τεχνικές προκλήσεις λόγω της δύσβατης μορφολογίας της περιοχής. Παράλληλα, διαδραμάτισε στρατηγικό ρόλο στους δύο Παγκόσμιους Πολέμους, εξυπηρετώντας τη μεταφορά συμμαχικών και ελληνικών στρατευμάτων, ενώ αποτέλεσε στόχο αντιστασιακών ενεργειών κατά την Κατοχή. Μεταπολεμικά, συνέβαλε καθοριστικά στην αποκατάσταση του σιδηροδρομικού δικτύου και την ανασυγκρότηση της χώρας.",
+        hist1:"Κατασκευή",hist1p:"Ο σχεδιασμός, οι προκλήσεις και η δημιουργία της γραμμής.",
+        hist2:"Α' Παγκόσμιος Πόλεμος",hist2p:"Η στρατηγική σημασία της γραμμής και τα γεγονότα της εποχής.",
+        hist3:"Β' Παγκόσμιος Πόλεμος",hist3p:"Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.",
+        hist4:"Μεταπολεμικά",hist4p:"Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.",
+        hist5:"Τηλεδιοίκηση",hist5p:"Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.",
+        hist6:"Σήμερα",hist6p:"Ανασυγκρότηση, εξέλιξη και προσπάθειες διατήρησης.",
+        discover:"Ανακαλύψτε →",
+        engEyebrow:"Μηχανική & υποδομές",engTitle:"Η μηχανική πίσω από τη διαδρομή",
+        engIntro:"Το σιδηροδρομικό Πέρασμα του Μπράλου αποτελεί ένα εντυπωσιακό σύνολο τεχνικών έργων και υποδομών, που αποτυπώνουν την πολυπλοκότητα και την ιστορική εξέλιξη της γραμμής. Κατά μήκος του εκτείνονται 13 σταθμοί και στάσεις, 22 γέφυρες μήκους άνω των 10 μέτρων, καθώς και 20 σήραγγες. Ανάμεσά τους ξεχωρίζουν οι εμβληματικές μεταλλικές γέφυρες της Παπαδιάς, του Ασωπού και του Γοργοποτάμου, αλλά και η Σήραγγα του Μπράλου, μία από τις μεγαλύτερες της Ελλάδας. Το έργο συμπληρώνουν ειδικές αμυντικές στοές, σχεδιασμένες για την προστασία της γραμμής από κατολισθήσεις, αναδεικνύοντας τη μηχανική ευφυΐα και τις τεχνικές προκλήσεις ενός μοναδικού σιδηροδρομικού έργου.",
+        eng1:"Γέφυρες",eng1p:"Λιθόκτιστες και μεταλλικές κατασκευές, αρχιτεκτονική και τεχνικές λεπτομέρειες.",
+        eng2:"Σήραγγες",eng2p:"Η διάνοιξη μέσα από το ορεινό ανάγλυφο και οι προκλήσεις της κατασκευής.",
+        eng3:"Σταθμοί & Στάσεις",eng3p:"Ιστορικά κτίρια, σιδηροδρομικοί κόμβοι και μικρές στάσεις.",
+        mapsEyebrow:"Εξερευνήστε τη γεωγραφία",mapsTitle:"Μονοπάτι Σιδηροδρομικών",
+        mapsIntro:"Η κατασκευή του Περάσματος της Τραχίνας, λόγω του ιδιαίτερα απόκρημνου και δυσπρόσιτου ανάγλυφου, απαίτησε πρωτόγνωρες προσπάθειες, με τη διάνοιξη μονοπατιού μήκους περίπου 6 χιλιομέτρων για τη μεταφορά εργαζομένων και υλικών. Ιδιαίτερο ενδιαφέρον παρουσιάζει η χρήση πορσελάνης στις λιθόκτιστες κατασκευές, η οποία ενδέχεται να συνέβαλε στη διαχρονική αντοχή τους. Η μεταφορά της γινόταν ακτοπλοϊκώς έως την Αγία Μαρίνα και στη συνέχεια με κάρα έως τον Σταθμό του Ασωπού. Σήμερα, το ιστορικό μονοπάτι εξακολουθεί να ακολουθεί τη διαδρομή από τη γέφυρα του Ασωπού (Γεφύρι του Ντούνου), μέσα από το επιβλητικό φαράγγι, καταλήγοντας έπειτα από περίπου δύο ώρες πεζοπορίας στον Σταθμό του Ασωπού.",
+        mapPanelTitle:"Ο Μπράλος στον χάρτη",mapPanelText:"Η χάραξη, οι σταθμοί και τα σημεία ενδιαφέροντος σε έναν διαδραστικό χάρτη.",
+        future:"Μελλοντικές Προσθήκες ↗",
+        booksEyebrow:"Βιβλιοθήκη & έρευνα",booksTitle:"Βιβλία & ιστορικές πηγές",
+        booksIntro:"Μια επιμελημένη ψηφιακή βιβλιοθήκη με βιβλιογραφία, αρχειακό υλικό και δημοσιεύσεις.",
+        book1:"Ιστορική βιβλιογραφία",book1p:"Μελέτες και εκδόσεις για την ελληνική σιδηροδρομική ιστορία.",
+        book2:"Αρχειακά τεκμήρια",book2p:"Έγγραφα, φωτογραφίες, χάρτες και ιστορικές μαρτυρίες.",
+        book3:"Έρευνα & δημοσιεύσεις",book3p:"Σύγχρονες εργασίες και τεχνικές μελέτες.",
+        contactEyebrow:"Επικοινωνήστε μαζί μας",contactTitle:"Ας κρατήσουμε ζωντανή την ιστορία",
+        contactText:"Για ιστορικές πληροφορίες, ερευνητικές συνεργασίες, περιηγήσεις ή συνεισφορά αρχειακού υλικού, επικοινωνήστε μαζί μας.",
+        contactNote:"Η διεύθυνση είναι ενδεικτική και πρέπει να αντικατασταθεί με το επίσημο email.",
+        nameLabel:"Ονοματεπώνυμο",emailLabel:"Email",topicLabel:"Θέμα επικοινωνίας",
+        topic1:"Γενικό ερώτημα",topic2:"Ιστορική έρευνα",topic3:"Επίσκεψη / περιήγηση",topic4:"Αρχειακό υλικό",
+        messageLabel:"Μήνυμα",send:"Αποστολή μηνύματος",
+        footerText:"Ιστορία · Μηχανική · Φύση",backTop:"Επιστροφή στην κορυφή ↑",
+        formDemo:"Η φόρμα λειτουργεί ως demo. Για αποστολή μηνυμάτων απαιτείται σύνδεση με backend."
+      },
+      en: {
+        navHome:"Home",
+        navHistory:"History", navConstruction:"Construction", navWW1:"World War I", navWW2:"World War II", navPostWar:"Post-War", navSignalling:"Signalling", navToday:"Today",
+        navEngineering:"Engineering", navBridges:"Bridges", navTunnels:"Tunnels", navStations:"Stations & Stops",
+        navMaps:"Maps", navMap:"Unified Maps", navProfile:"Longitudinal Profile",
+        navBooks:"Books",navContact:"Contact",
+        heroEyebrow:"A journey through time",
+        heroSub:"Where engineering, history and nature meet.",
+        heroEn:"Where engineering, history and nature meet.",
+        explore:"Explore the Route",plan:"Plan Your Visit",scroll:"↓ Scroll to explore",
+        introEyebrow:"A historic railway route",
+        introTitle:"A landmark of Greek railway heritage",
+        introText:"The Bralos railway pass connects engineering with the mountainous landscape of Roumeli. A route inviting visitors to discover the relationship between people, technology and nature.",
+        introEn:"A railway journey through landscapes shaped by engineering, history and time.",
+        learn:"Discover more",
+        feat1:"Engineering Excellence",feat1p:"Bridges, tunnels and demanding infrastructure.",
+        feat2:"Natural Beauty",feat2p:"Mountains, gorges and remarkable landscapes.",
+        feat3:"Historic Heritage",feat3p:"A journey through Greek history.",
+        feat4:"Culture",feat4p:"Archives, testimonies and local stories.",
+        feat5:"Tourism",feat5p:"Discover the region at your own pace.",
+        feat6:"Sustainable Heritage",feat6p:"Respect for the landscape and its legacy.",
+        routeCaption:"The Bralos landscape",routeCaptionSub:"Central Greece · Railway heritage",
+        routeEyebrow:"Landscape & place",routeTitle:"A journey through the heart of Greece",
+        routeText:"Discover mountain passes, engineering works and places with a distinctive historical identity. Every stop along the route tells a different story.",
+        exploreMap:"Explore the Map",
+        stat1:"The era of railway expansion",stat2:"Mountain terrain",stat3:"Engineering works",stat4:"Stories to discover",
+        historyEyebrow:"The story of a railway",historyTitle:"A history that crosses time",
+        historyIntro:"From construction and wartime history to post-war reconstruction and today's heritage.",
+        hist1:"Construction",hist1p:"The design, challenges and creation of the line.",
+        hist2:"The World Wars",hist2p:"The line's strategic significance and the events of its time.",
+        hist3:"Post-war & Today",hist3p:"Reconstruction, evolution and preservation efforts.",
+        discover:"Discover →",
+        engEyebrow:"Engineering & infrastructure",engTitle:"The engineering behind the route",
+        engIntro:"Explore the structures and infrastructure that shaped the railway passage.",
+        eng1:"Bridges",eng1p:"Stone and steel structures, architecture and engineering details.",
+        eng2:"Tunnels",eng2p:"Carving through mountainous terrain and the challenges of construction.",
+        eng3:"Stations & Stops",eng3p:"Historic buildings, railway hubs and small halts.",
+        mapsEyebrow:"Explore the geography",mapsTitle:"Maps & routes",
+        mapsIntro:"A unified digital map will bring together the route, points of interest and elevation profile.",
+        mapPanelTitle:"Bralos on the map",mapPanelText:"An interactive map and historical route variants will be added in a future release.",
+        future:"Future Additions ↗",
+        booksEyebrow:"Library & research",booksTitle:"Books & historical sources",
+        booksIntro:"A curated digital library of bibliography, archival material and publications.",
+        book1:"Historical bibliography",book1p:"Studies and publications on Greek railway history.",
+        book2:"Archival documents",book2p:"Documents, photographs, maps and historical accounts.",
+        book3:"Research & publications",book3p:"Contemporary research and engineering studies.",
+        contactEyebrow:"Get in touch",contactTitle:"Help keep the story alive",
+        contactText:"For historical information, research collaborations, guided visits or archival contributions, get in touch.",
+        contactNote:"This email address is a placeholder and should be replaced with the official address.",
+        nameLabel:"Full name",emailLabel:"Email",topicLabel:"Subject",
+        topic1:"General enquiry",topic2:"Historical research",topic3:"Visit / guided tour",topic4:"Archival material",
+        messageLabel:"Message",send:"Send message",
+        footerText:"History · Engineering · Nature",backTop:"Back to top ↑",
+        formDemo:"This is a demo form. Connecting a backend is required to send messages."
+      }
+    };
+
+    let language = localStorage.getItem("bralos-language") || "el";
+    let theme = localStorage.getItem("bralos-theme") || "light";
+
+    function setLanguage(lang) {
+      language = lang;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key]) el.textContent = translations[lang][key];
+      });
+
+      document.getElementById("langToggle").textContent =
+        lang === "el" ? "GR" : "EN";
+
+      document.title = lang === "el"
+        ? "Bralos Rail Pass | Σιδηροδρομικό Πέρασμα Μπράλου"
+        : "Bralos Rail Pass | Where Engineering, History & Nature Meet";
+
+      document.querySelector('meta[name="description"]').content =
+        lang === "el"
+          ? "Ανακαλύψτε την ιστορία, τη μηχανική και τα τοπία του σιδηροδρομικού περάσματος Μπράλου."
+          : "Discover the history, engineering and landscapes of the Bralos railway route.";
+
+      localStorage.setItem("bralos-language", lang);
+    }
+
+    function setTheme(nextTheme) {
+      theme = nextTheme;
+      document.documentElement.dataset.theme = theme;
+      document.getElementById("themeToggle").textContent =
+        theme === "dark" ? "Light" : "Dark";
+      document.querySelector('meta[name="theme-color"]').content =
+        theme === "dark" ? "#1b1b1b" : "#f9f9f7";
+      localStorage.setItem("bralos-theme", theme);
+    }
+
+    document.getElementById("langToggle").addEventListener("click", () => {
+      setLanguage(language === "el" ? "en" : "el");
+    });
+
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      setTheme(theme === "light" ? "dark" : "light");
+    });
+
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("open");
+      });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", event => {
+      event.preventDefault();
+      document.getElementById("formMessage").textContent =
+        translations[language].formDemo;
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    setLanguage(language);
+    setTheme(theme);
+  </script>
+</body>
+</html>
